@@ -20,7 +20,18 @@
             <br>My name is Eduard
             <br>Nice to meet you
         </h1>
-        <button class="button-continue" type="button" on:click={welcomePress}>
-            <b>Press me!</b>
+        <button class="button-welcome" type="button" on:click={welcomePress}>
+            <b>Press <br>me !</b>
         </button>
 </div>
+
+<style>
+    .button-welcome {
+        padding: 1rem;
+        border: 2px solid rgb(207, 207, 207);
+        border-radius: 50%;
+    }
+    .button-welcome:hover {
+        box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+    }
+</style>
