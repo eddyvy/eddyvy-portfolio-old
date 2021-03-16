@@ -1,9 +1,9 @@
 <script>
-
+    import { fade } from 'svelte/transition'
 
 </script>
 
-<div class="Header">
+<div class="Header" transition:fade>
     Holitaaa soy el header
 </div>
 

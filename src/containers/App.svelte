@@ -2,6 +2,7 @@
   import Welcome from '../components/Welcome.svelte'
   import Header from '../components/Header.svelte'
   import { welcomeDone } from '../store.js'
+  import { showHeader } from '../store.js'
 
 </script>
 
@@ -9,7 +10,7 @@
   {#if !$welcomeDone}
     <Welcome />
   {/if}
-  {#if $welcomeDone}
+  {#if $showHeader}
     <Header />
   {/if}
 </div>
