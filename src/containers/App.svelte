@@ -1,9 +1,17 @@
 <script>
+  import Welcome from '../components/Welcome.svelte'
   import Header from '../components/Header.svelte'
+  import { welcomeDone } from '../store.js'
+
 </script>
 
 <div class="App">
-  <Header />
+  {#if !$welcomeDone}
+    <Welcome />
+  {/if}
+  {#if $welcomeDone}
+    <Header />
+  {/if}
 </div>
 
 <style>
@@ -16,10 +24,14 @@
     font-size: 62.5%;
   }
   
-  :global(input) {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  :global(button) {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
   }
 
   .App {
