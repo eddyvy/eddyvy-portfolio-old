@@ -1,13 +1,16 @@
 <script>
-
+	import { fade } from 'svelte/transition'
+	export let visible
 </script>
 
 <div class="Welcome">
-    <h1>Welcome to my portfolio <br> I am Eduard Valls <br> Nice to meet you</h1>
+    {#if visible}
+        <h1 transition:fade>
+            Hello!!
+            <span style='font-size:5rem;'>&#128516;</span>
+            <br>Welcome to my portfolio
+            <br>My name is Eduard
+            <br>Nice to meet you
+        </h1>
+    {/if}
 </div>
-
-<style>
-    .Welcome {
-        text-align: center;
-    }
-</style>
