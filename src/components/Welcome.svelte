@@ -9,7 +9,6 @@
     }
 
     onDestroy(() => $showHeader = true)
-    onDestroy(() => console.log($showHeader))
 </script>
 
 <div class="Welcome" transition:fade>
