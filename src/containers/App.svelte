@@ -17,8 +17,13 @@
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+  :global(:root) {
+		--theme-color: rgb(15, 131, 240);
+	}
+
   :global(main) {
-    color: rgb(15, 131, 240);
+    color: var(--theme-color);
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -42,6 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 95vw;
     height: 94vh;
   }

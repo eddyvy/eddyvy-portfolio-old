@@ -1,37 +1,24 @@
 <script>
     import { fade } from 'svelte/transition'
     import Contact from './Contact.svelte'
+    import HeaderButton from './HeaderButton.svelte'
 
 </script>
 
 <div class="Header" transition:fade>
     <Contact/>
     <nav class="Header-nav">
-        <button class="Header-button">
-            About me
-        </button>
-        <button class="Header-button">
-            Objectives
-        </button>
-        <button class="Header-button">
-            Knowledge
-        </button>
-        <button class="Header-button">
-            Skills
-        </button>
-        <button class="Header-button">
-            Experience
-        </button>
+        <HeaderButton buttonValue="About me"/>
+        <HeaderButton buttonValue="Objectives"/>
+        <HeaderButton buttonValue="Knowledge"/>
+        <HeaderButton buttonValue="Experience"/>
+        <HeaderButton buttonValue="Hobbies"/>
     </nav>
 </div>
 
 <style>
     .Header {
-        position: fixed;
-        top: 0;
-    }
-    .Header-button {
-        margin: 1rem;
-        padding: 1rem;
+        position: relative;
+        align-self: flex-start;
     }
 </style>

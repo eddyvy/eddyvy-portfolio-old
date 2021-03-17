@@ -1,11 +1,14 @@
 
 <div class="Contact">
-    <figure class="Contact-figure">
-        <!-- <img src="https://i.imgur.com/iTyv47a.jpg" alt="profile-picture"> -->
-    </figure>
+    <figure class="Contact-figure"/>
     <div class="Contact-data">
         <h3>Eduard Valls Yue</h3>
-        <h5>edwardyue93@gmail.com</h5>
+        <h5>
+            Aerospace Engineer
+            <br>Pilot
+            <br>Computer Science Student
+        </h5>
+        <h6>edwardyue93@gmail.com</h6>
     </div>
 </div>
 
@@ -24,8 +27,21 @@
         background-size: cover;
         background-position: center;
     }
-    .Contact-figure img {
-        height: 25vh;
-        border-radius: 10rem;
+    .Contact-data h3, h4, h5{
+        padding: 0;
+        margin: 0.8rem;
     }
+    @media (max-width: 850px) {
+        .Contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .Contact-figure {
+            height: 10rem;
+            width: 10rem;
+        }
+    }
+
 </style>
