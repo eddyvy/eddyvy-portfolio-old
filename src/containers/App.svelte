@@ -1,17 +1,19 @@
 <script>
   import Welcome from '../components/Welcome.svelte'
   import Header from '../components/Header.svelte'
+  import Content from '../components/Content.svelte'
   import { welcomeDone } from '../store.js'
   import { showHeader } from '../store.js'
 
 </script>
 
-<div class="App">
+<div class="App" id="App">
   {#if !$welcomeDone}
     <Welcome />
   {/if}
   {#if $showHeader}
     <Header />
+    <Content />
   {/if}
 </div>
 
@@ -45,10 +47,11 @@
     text-align: center;
     padding: 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 95vw;
-    height: 94vh;
+    min-height: 94vh;
   }
 </style>

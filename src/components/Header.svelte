@@ -2,23 +2,28 @@
     import { fade } from 'svelte/transition'
     import Contact from './Contact.svelte'
     import HeaderButton from './HeaderButton.svelte'
+    import { infoContent } from '../store.js'
 
 </script>
 
 <div class="Header" transition:fade>
     <Contact/>
     <nav class="Header-nav">
-        <HeaderButton buttonValue="About me"/>
-        <HeaderButton buttonValue="Objectives"/>
-        <HeaderButton buttonValue="Knowledge"/>
-        <HeaderButton buttonValue="Experience"/>
-        <HeaderButton buttonValue="Hobbies"/>
+        {#each infoContent as content}
+            <HeaderButton buttonValue={content}/>
+        {/each}
     </nav>
 </div>
 
 <style>
     .Header {
         position: relative;
-        align-self: flex-start;
+        top: 0;
+    }
+    @media (max-width: 500px) {
+        .Header-nav {
+            display: flex;
+            flex-direction: column;
+        }
     }
 </style>

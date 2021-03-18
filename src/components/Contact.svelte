@@ -9,6 +9,7 @@
             <br>Computer Science Student
         </h5>
         <h6>edwardyue93@gmail.com</h6>
+        <p class="last-update">Last update: March 2021</p>
     </div>
 </div>
 
@@ -27,7 +28,7 @@
         background-size: cover;
         background-position: center;
     }
-    .Contact-data h3, h4, h5{
+    .Contact-data h3, h5{
         padding: 0;
         margin: 0.8rem;
     }
@@ -42,6 +43,10 @@
             height: 10rem;
             width: 10rem;
         }
+    }
+
+    .last-update {
+        font-size: 0.8rem;
     }
 
 </style>

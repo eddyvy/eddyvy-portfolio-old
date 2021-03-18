@@ -8,7 +8,10 @@
         welcomeDone.set(!$welcomeDone)
     }
 
-    onDestroy(() => $showHeader = true)
+    onDestroy(() => {
+        $showHeader = true
+        document.getElementById('App').style.justifyContent = 'flex-start'
+    })
 </script>
 
 <div class="Welcome" transition:fade>
