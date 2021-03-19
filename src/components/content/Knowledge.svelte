@@ -1,17 +1,20 @@
 <script>
     import ProgressBar from '../ProgressBar.svelte'
-    import { knowledge } from '../../store.js'
+    import TechTool from '../TechTool.svelte'
+    import { technologies } from '../../store.js'
 </script>
 
 <div class="Knowledge">
     <div class="Knowledge-programming">
-        {#each knowledge as singleKnow}
-            <ProgressBar barName={singleKnow.name} barValue={singleKnow.level}/>
+        {#each technologies as singleKnow}
+            <TechTool techChosen={singleKnow.name} />
+            <ProgressBar barName='' barValue={singleKnow.level}/>
         {/each}
     </div>
     <div class="Knowledge-explanation">
         <p>
             Most of the programming knowledge is taken by the Platzi platform with different online courses about programming.
+            Where I took more than 100 hours of class.
         </p>
         <p>
             Getting into Computer Science where I am actually focused in Python, SQL, VirtualBox, Jupyter Notebook, some C and some Java.

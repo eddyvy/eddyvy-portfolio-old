@@ -3,6 +3,7 @@
     import { fade, fly } from 'svelte/transition'
     import { infoContent } from '../store.js'
 
+    import Projects from './content/Projects.svelte'
     import AboutMe from './content/AboutMe.svelte'
     import Objectives from './content/Objectives.svelte'
     import Skills from './content/Skills.svelte'
@@ -17,6 +18,9 @@
         {#if ($selectedInfo === content)}
             <div in:fly="{{ y: 200, duration: 2000 }}" out:fade>
                 <h2>{content}</h2>
+                {#if content==='Projects'}
+                    <Projects />
+                {/if}
                 {#if content==='About me'}
                     <AboutMe />
                 {/if}

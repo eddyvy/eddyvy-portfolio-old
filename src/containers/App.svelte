@@ -42,6 +42,16 @@
     outline: inherit;
   }
 
+  :global(a) {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  :global(ul) {
+    list-style:none;
+  }
+  
+
   .App {
     font-size: 1.4rem;
     text-align: center;

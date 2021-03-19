@@ -8,7 +8,15 @@
             <br>Pilot
             <br>Computer Science Student
         </h5>
-        <h6>edwardyue93@gmail.com</h6>
+        <a href="mailto: edwardyue93@gmail.com" target="_blank">
+            <h6>edwardyue93@gmail.com</h6>
+        </a>
+        <a href="https://github.com/eddyvy" target="_blank">
+            <h6>Github: eddyvy</h6>
+        </a>
+        <a href="https://www.linkedin.com/in/eduard-valls-yue-1a179211b/" target="_blank">
+            <h6>Linkedin</h6>
+        </a>
         <p class="last-update">Last update: March 2021</p>
     </div>
 </div>
@@ -49,4 +57,12 @@
         font-size: 0.8rem;
     }
 
+    a, h6 {
+        margin: 0;
+        margin-bottom: 3px;
+    }
+
+    h6:hover {
+        text-decoration: underline;
+    }
 </style>
