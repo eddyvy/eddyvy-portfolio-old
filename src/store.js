@@ -50,7 +50,7 @@ export const technologies = [
         level: 55
     },
     {
-        name: "Bash / CommandLine",
+        name: "Bash",
         logo: "https://e7.pngegg.com/pngimages/48/567/png-clipart-bash-shell-script-command-line-interface-z-shell-shell-rectangle-logo-thumbnail.png",
         level: 40
     },

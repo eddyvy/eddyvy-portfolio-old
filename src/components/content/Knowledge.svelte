@@ -7,8 +7,10 @@
 <div class="Knowledge">
     <div class="Knowledge-programming">
         {#each technologies as singleKnow}
-            <TechTool techChosen={singleKnow.name} />
-            <ProgressBar barName='' barValue={singleKnow.level}/>
+            <div class="Knowledge-programming-tech">
+                <TechTool techChosen={singleKnow.name} />
+                <ProgressBar barName='' barValue={singleKnow.level}/>
+            </div>
         {/each}
     </div>
     <div class="Knowledge-explanation">
@@ -29,5 +31,19 @@
     .Knowledge {
         display: grid;
         grid-template-columns: 50% 50%;
+    }
+    .Knowledge-programming {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 500px) {
+        .Knowledge {
+            display: flex;
+            flex-direction: column;
+        }
+        .Knowledge-programming {
+            justify-content: center;
+        }
     }
 </style>

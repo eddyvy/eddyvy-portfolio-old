@@ -1,6 +1,6 @@
 <div class="Hobbies">
     <ul>
-        <li>League of Legends</li>
+        <li>VideoGames</li>
         <li>Nature</li>
         <li>Animals</li>
         <li>Canoe</li>

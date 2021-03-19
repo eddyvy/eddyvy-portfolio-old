@@ -35,7 +35,7 @@
 
     .ProgressBar {
         margin: 0.8rem;
-        width: 20rem;
+        width: 10rem;
         padding: 4px;
         background: rgba(0, 0, 0, 0.25);
         border-radius: 1rem;

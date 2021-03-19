@@ -24,6 +24,9 @@
 		--theme-color: rgb(15, 131, 240);
 	}
 
+  :global(body) {
+    background-image: url('https://i.imgur.com/ypdnjjq.jpg');
+  }
   :global(main) {
     color: var(--theme-color);
     font-family: 'Open Sans', sans-serif;
@@ -49,6 +52,10 @@
 
   :global(ul) {
     list-style:none;
+  }
+
+  :global(li) {
+    margin: 0.8rem;
   }
   
 
